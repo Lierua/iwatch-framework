@@ -1,12 +1,20 @@
 import Image from "next/image";
-import iwatch from "../../../public/images/iwatch.png";
+import gray from "../../../public/images/grayImage.png";
+import teal from "../../../public/images/tealImage.png";
+import pink from "../../../public/images/pinkImage.png";
+const icons = {
+  gray,
+  teal,
+  pink,
+};
 import ColorPicker from "./Colorpicker";
 
-const ShowCase = () => {
+const ShowCase = ({ isSelected }) => {
+  const selectedImage = icons[isSelected];
   return (
     <div className="showCase">
-      <Image src={iwatch} alt="iwatch photo" />
-      <ColorPicker />
+      <Image src={selectedImage} alt="iwatch photo" />
+      <ColorPicker isSelected={isSelected} />
     </div>
   );
 };

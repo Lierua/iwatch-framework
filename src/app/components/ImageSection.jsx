@@ -1,11 +1,14 @@
+"use client";
+import { useState } from "react";
 import ShowCase from "./ShowCase";
 import Selection from "./Selection";
 
-const ImageSection = ({ children }) => {
+const ImageSection = () => {
+  const [isSelected, setIsSelected] = useState("teal");
   return (
     <div className="ImageSection">
-      <ShowCase />
-      <Selection />
+      <ShowCase isSelected={isSelected} />
+      <Selection isSelected={isSelected} setIsSelected={setIsSelected} />
     </div>
   );
 };

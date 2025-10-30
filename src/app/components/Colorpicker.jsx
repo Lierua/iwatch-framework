@@ -1,6 +1,6 @@
-const ColorPicker = () => {
+const ColorPicker = (isSelected) => {
   return (
-    <div className="colorPicker">
+    <div data-colorPicked={isSelected} className="colorPicker">
       <span></span>
       <span></span>
       <span></span>
