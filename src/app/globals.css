@@ -29,6 +29,7 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
   color: white;
+  padding-inline: 1rem;
 }
 
 .content {
@@ -37,7 +38,7 @@ body {
 
 .mainGrid {
   margin: 0 auto;
-  width: 1200px;
+  max-width: 1200px;
   display: grid;
   grid-template-columns: 3fr 2fr;
 }
@@ -81,6 +82,33 @@ body {
         color: white;
         font-size: 1.5rem;
         font-weight: 400;
+        padding: 6px 15px;
+        border-radius: 100px;
+        transition: all 0.4s ease;
+      }
+      &[data-active="Mac"] li:nth-child(1) {
+        background-color: white;
+        color: #b6ccda;
+      }
+
+      &[data-active="iPhone"] li:nth-child(2) {
+        background-color: white;
+        color: #b6ccda;
+      }
+
+      &[data-active="iPad"] li:nth-child(3) {
+        background-color: white;
+        color: #b6ccda;
+      }
+
+      &[data-active="iWatch"] li:nth-child(4) {
+        background-color: white;
+        color: #b6ccda;
+      }
+
+      &[data-active="Support"] li:nth-child(5) {
+        background-color: white;
+        color: #b6ccda;
       }
     }
   }
@@ -172,6 +200,11 @@ body {
           height: var(--size-gray, 22px);
           background-color: #404354;
           box-shadow: 0 5px 10px var(--box-shadow-gray, rgba(0, 0, 0, 0)); /* no shadow by default */
+          &:hover {
+            width: 28px;
+            height: 28px;
+            box-shadow: 0 3px 8px #404354be; /* no shadow by default */
+          }
         }
 
         &:nth-child(2) {
@@ -179,6 +212,11 @@ body {
           height: var(--size-teal, 22px);
           background-color: #58d7c4;
           box-shadow: 0 5px 10px var(--box-shadow-teal, rgba(0, 0, 0, 0)); /* no shadow by default */
+          &:hover {
+            width: 28px;
+            height: 28px;
+            box-shadow: 0 3px 8px #404354be; /* no shadow by default */
+          }
         }
 
         &:nth-child(3) {
@@ -186,6 +224,11 @@ body {
           height: var(--size-pink, 22px);
           background-color: #f2cec6;
           box-shadow: 0 5px 10px var(--box-shadow-pink, rgba(0, 0, 0, 0)); /* no shadow by default */
+          &:hover {
+            width: 28px;
+            height: 28px;
+            box-shadow: 0 3px 8px #404354be; /* no shadow by default */
+          }
         }
       }
 
@@ -244,4 +287,8 @@ body {
       }
     }
   }
+}
+
+.go {
+  rotate: 180deg;
 }

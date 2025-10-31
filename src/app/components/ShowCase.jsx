@@ -9,12 +9,12 @@ const icons = {
 };
 import ColorPicker from "./Colorpicker";
 
-const ShowCase = ({ isSelected }) => {
+const ShowCase = ({ isSelected, setIsSelected }) => {
   const selectedImage = icons[isSelected];
   return (
     <div className="showCase">
       <Image src={selectedImage} alt="iwatch photo" />
-      <ColorPicker isSelected={isSelected} />
+      <ColorPicker isSelected={isSelected} setIsSelected={setIsSelected} />
     </div>
   );
 };
