@@ -6,7 +6,10 @@ import { PiShoppingBagOpenThin } from "react-icons/pi";
 import { useState, useEffect } from "react";
 
 const Nav = () => {
-  const stored = localStorage.getItem("activeLink") || "iWatch";
+  const stored =
+    typeof window !== "undefined"
+      ? localStorage.getItem("activeLink") || "gray"
+      : "gray";
   const [active, setActive] = useState(stored); // default
 
   // Store whenever active changes (only after client is ready)
