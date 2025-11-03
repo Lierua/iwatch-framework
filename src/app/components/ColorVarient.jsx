@@ -9,11 +9,15 @@ const icons = {
   pink,
 };
 
-const ColorVarient = ({ color }) => {
+const ColorVarient = ({ color, isSelected, setIsSelected }) => {
   const selectedImage = icons[color] || gray;
 
   return (
-    <div className="colorVarient" data-color={color}>
+    <div
+      onClick={() => setIsSelected(color)}
+      className="colorVarient"
+      data-color={color}
+    >
       <Image src={selectedImage} alt={`${color} iwatch photo`} />
       <div className="box"></div>
     </div>

@@ -1,11 +1,23 @@
 import ColorVarient from "./ColorVarient";
 
-const Selection = () => {
+const Selection = ({ isSelected, setIsSelected }) => {
   return (
     <div className="selection">
-      <ColorVarient color="gray" />
-      <ColorVarient color="teal" />
-      <ColorVarient color="pink" />
+      <ColorVarient
+        isSelected={isSelected}
+        setIsSelected={setIsSelected}
+        color="gray"
+      />
+      <ColorVarient
+        isSelected={isSelected}
+        setIsSelected={setIsSelected}
+        color="teal"
+      />
+      <ColorVarient
+        isSelected={isSelected}
+        setIsSelected={setIsSelected}
+        color="pink"
+      />
     </div>
   );
 };
