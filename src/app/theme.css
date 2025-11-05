@@ -1,0 +1,19 @@
+@theme {
+  --bg-color: linear-gradient(135deg, #c8dce5, #b6ccda);
+  --prime-color: #fff;
+  --white: white;
+  --light-blue: #b6ccda;
+  --box-shadow-hover: 0 3px 8px #404354be;
+  --normal-size: 22px;
+  --picked-hover: 25px;
+  --picked-size: 30px;
+  --gray-color: #434558;
+  --teal-color: #6addcc;
+  --pink-color: #f9cdc4;
+  --max-w-1200
+}
+
+:root {
+  --box-shadow-hover: 0 3px 8px #404354be;
+  --box-shadow-picked: 0 5px 10px #404354be;
+}
