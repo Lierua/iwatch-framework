@@ -4,7 +4,7 @@ import Title from "./Title";
 
 const TitleSection = ({ children }) => {
   return (
-    <div className="titleSection">
+    <div className="h-[80vh] gap-6 flex flex-col">
       <Title />
       <Button />
       <Arrows />

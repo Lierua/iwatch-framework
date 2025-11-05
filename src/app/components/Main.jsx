@@ -5,7 +5,7 @@ import ImageSection from "./ImageSection";
 
 const Main = ({ children }) => {
   return (
-    <div className="mainGrid">
+    <div className="my-0 mx-auto grid grid-cols-[3fr_2fr] max-w-[1200px]">
       <TitleSection></TitleSection>
       <ImageSection></ImageSection>
     </div>

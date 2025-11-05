@@ -12,7 +12,7 @@ import ColorPicker from "./Colorpicker";
 const ShowCase = ({ isSelected, setIsSelected }) => {
   const selectedImage = icons[isSelected];
   return (
-    <div className="showCase">
+    <div className="my-[5rem] flex">
       <Image src={selectedImage} alt="iwatch photo" />
       <ColorPicker isSelected={isSelected} setIsSelected={setIsSelected} />
     </div>

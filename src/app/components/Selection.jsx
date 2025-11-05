@@ -2,7 +2,7 @@ import ColorVarient from "./ColorVarient";
 
 const Selection = ({ isSelected, setIsSelected }) => {
   return (
-    <div className="selection">
+    <div className="flex w-full mx-auto my-0 gap-8 justify-between">
       <ColorVarient
         isSelected={isSelected}
         setIsSelected={setIsSelected}
