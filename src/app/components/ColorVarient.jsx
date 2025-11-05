@@ -15,11 +15,11 @@ const ColorVarient = ({ color, isSelected, setIsSelected }) => {
   return (
     <div
       onClick={() => setIsSelected(color)}
-      className="colorVarient"
+      className="w-full grid transition-all duration-200 ease hover:scale-[1.1] gap-4"
       data-color={color}
     >
-      <Image src={selectedImage} alt={`${color} iwatch photo`} />
-      <div className="box"></div>
+      <Image className="mx-auto " src={selectedImage} alt={`${color} iwatch photo`} />
+      <div className={`bg-iwatch-${color} w-full h-[70px] mt-[-4rem] z-[-1] opacity-60 rounded-3xl`}></div>
     </div>
   );
 };
