@@ -41,11 +41,6 @@
   --box-shadow-picked: 0 5px 10px #404354be;
 }
 
-/* * {
-  padding: 0;
-  margin: 0;
-}
- */
 body {
   background: linear-gradient(135deg, #c8dce5, #b6ccda);
   font-family: Arial, Helvetica, sans-serif;
