@@ -3,19 +3,11 @@
 import { FaApple } from "react-icons/fa6";
 import { CiSearch } from "react-icons/ci";
 import { PiShoppingBagOpenThin } from "react-icons/pi";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const Nav = () => {
-  const stored =
-    typeof window !== "undefined"
-      ? localStorage.getItem("activeLink") || "gray"
-      : "gray";
-  const [active, setActive] = useState(stored); // default
-
-  // Store whenever active changes (only after client is ready)
-  useEffect(() => {
-    localStorage.setItem("activeLink", active);
-  }, [active]);
+  const stored = "iWatch";
+  const [active, setActive] = useState(stored);
 
   return (
     <div className="nav">
